@@ -10,6 +10,7 @@ const myBakery_1 = new Vue ({
             'Journal',
             'Contact',
             'My Account',
+            'Cart',
             /* "<i class='fas fa-shopping-cart'></i>", */
         ]
     }
