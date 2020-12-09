@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.container, ul{
+    margin: 0;
+}
+
+
+/* debugging classes */
+.debug header nav {
+    border: 1px solid coral;
+}
+.debug footer {
+    border: 1px solid coral;
+}
+.debug #products {
+    border: 1px solid coral;
+}
+/* project */
+
+#hero{
+    height: 662px;
+    width: 100%;
+    background-image: url('../img/hero-header-bakery.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 0% ;
+}
+
+header nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header nav img {
+    height: 97px;
+}
+
+nav .navbar-menu {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+header nav .navbar-menu li a {
+    text-decoration: none;
+    /* text-transform: uppercase; */ 
+    margin: 0 10px;
+}
+
+#hero .square-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main {
+    width: 100%;
+}
+
+#products {
+    width: 100%;
+    height: 662px;
+    padding: 0 100px;
+}
+
+footer {
+    width: 100%;
+    height: 331px;
+}
+
+footer nav {
+    height: 70%;
+    width: 100%;
+}
+
+footer nav .navbar-menu li a {
+    text-decoration: none;
+    /* text-transform: uppercase; */ 
+    margin: 0 10px;
+}
+
+footer .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#copyright {
+    height: 30%;
+    width: 100%;
+}
+
