@@ -148,9 +148,9 @@ main {
 }
 
 #products {
-    width: 100%;
+    width: 1300px;
     height: 612px;
-    padding: 0 150px;
+    margin: auto;
 }
 
 #products > .container{
@@ -190,9 +190,9 @@ main {
 }
 
 #celebration {
-    width: 100%;
+    width: 1300px;
     height: 650px;
-    padding: 0 150px;
+    margin: auto;
 }
 
 #celebration .corporate {
@@ -248,7 +248,8 @@ main {
 }
 
 #all-products {
-    padding: 0 150px;
+    width: 1300px;
+    margin:auto;
 }
 
 #all-products .card{
