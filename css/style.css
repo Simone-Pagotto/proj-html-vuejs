@@ -70,6 +70,19 @@
     color: #878589;
 }
 
+.all-text-purple {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #5b2ca2;
+}
+
+.carousel-text-purple{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #5b2ca2;
+}
+
 .section-title-purple{
     font-family: 'Roboto Slab', serif;
     font-weight: 600;
@@ -234,6 +247,23 @@ main {
     opacity: 1;
 }
 
+#all-products {
+    padding: 0 150px;
+}
+
+#all-products .card{
+    text-align: center;
+}
+
+#all-products .card:nth-child(2){
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#all-products .card:nth-child(3){
+    margin-left: 5px;
+    margin-right: 10px;
+}
 footer {
     width: 100%;
     height: 331px;
