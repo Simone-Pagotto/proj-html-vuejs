@@ -84,6 +84,12 @@
     font-size: 0.7rem;
     color: #878589;
 }
+.uppercase-white {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: white;
+}
 
 .tiny-text-white{
     font-family: 'Roboto', sans-serif;
@@ -232,12 +238,30 @@ main {
     position: absolute;
     top:0;
     left:0;
+    z-index:3;
     opacity:0;
+}
+
+#products .shadow{
+    width: 400px;
+    height: 100%;
+    margin-left: 20px;
+    text-align: center;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    background-color: black;
 }
 
 #products .choco:hover .choco-explore{
     opacity:1;
 }
+
+#products .choco:hover .shadow{
+    opacity: 0.2;
+}
+
 #products .strawberry{
     position:relative;
 }
@@ -250,11 +274,16 @@ main {
     position: absolute;
     top:0;
     left:0;
+    z-index:3;
     opacity:0;
 }
 
 #products .strawberry:hover .strawberry-explore{
     opacity:1;
+}
+
+#products .strawberry:hover .shadow{
+    opacity: 0.2;
 }
 
 #products [class*="chev"]{
@@ -355,6 +384,38 @@ main {
 #all-products .card:nth-child(3){
     margin-left: 5px;
     margin-right: 10px;
+}
+
+#all-products .card-explore{
+    position: relative;
+}
+
+#all-products .card-explore .text{
+    width: 100%;
+    height: 255px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+}
+
+#all-products .card:hover  .card-explore .text{
+    opacity: 1;
+}
+
+#all-products .card-explore .shadow{
+    width: 100%;
+    height: 255px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+}
+
+#all-products .card:hover  .card-explore .shadow{
+    opacity: 0.2;
 }
 
 #all-products .carousel {
