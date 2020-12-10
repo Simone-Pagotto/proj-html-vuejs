@@ -11,7 +11,6 @@ const myBakery_1 = new Vue ({
             'Contact',
             'My Account',
             'Cart',
-            /* "<i class='fas fa-shopping-cart'></i>", */
         ]
     }
 })
@@ -27,7 +26,7 @@ const myBakery_3 = new Vue ({
             'Journal',
             'Contact',
             'Orders',
-            /* "<i class='fas fa-shopping-cart'></i>", */
+            'Cart'
         ]
     }
 })

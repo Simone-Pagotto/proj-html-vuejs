@@ -37,6 +37,12 @@
     justify-content: center;
 }
 
+.flex-column-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .flex-center{
     display:flex;
     justify-content: center;
@@ -94,6 +100,14 @@
 }
 
 /* style classes */
+.uppercase-menu a{
+    font-family: 'Roboto', sans-serif;
+    color: #5b2ca2;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .uppercase-grey {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -111,6 +125,12 @@
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     color: white;
+}
+
+.copyright-grey{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6rem;
+    color:#878589;
 }
 
 .hero-title {
@@ -176,7 +196,8 @@
 
 #hero{
     height: 662px;
-    width: 100%;
+    width: 1500px;
+    margin: auto;
     background-image: url('../img/hero-header-bakery.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -206,7 +227,17 @@ nav .navbar-menu {
 header nav .navbar-menu li a {
     text-decoration: none;
     /* text-transform: uppercase; */ 
-    margin: 0 10px;
+    margin: 0 15px;
+}
+
+header nav .navbar-menu li {
+    align-items: center;
+}
+
+header nav .navbar-menu li:first-child .underbar {
+    height: 3px;
+    width: 30px;
+    background-color: #5b2ca2;
 }
 
 #hero .square-buttons {
@@ -597,7 +628,7 @@ main {
 }
 
 #delivery {
-    width: 1700px;
+    width: 1500px;
     margin: auto;
     height: 300px;
 }
@@ -626,8 +657,10 @@ main {
 
 
 footer {
-    width: 100%;
+    width: 1500px;
+    margin: auto;
     height: 331px;
+    padding: 50px;
 }
 
 footer nav {
@@ -641,14 +674,40 @@ footer nav .navbar-menu li a {
     margin: 0 10px;
 }
 
+footer .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #bda2f3;
+    text-align: center;
+}
+
+footer [class*="footer-"] {
+    height: 100%;
+}
+
 footer .footer-right {
-    display: flex;
+    align-items: flex-end;
+}
+
+footer .subscribe{
+    display:flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 25px;
+}
+
+footer .social-icons i {
+    color: #5b2ca2;
+    margin-left: 20px;;
 }
 
 #copyright {
     height: 30%;
     width: 100%;
+    margin-left:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
