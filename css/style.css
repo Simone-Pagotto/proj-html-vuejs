@@ -30,6 +30,13 @@
     justify-content: center;
 }
 
+.flex-column-flex-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -190,6 +197,105 @@
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
     font-size: 4rem;
+    color: white;
+}
+
+/* buttons */
+
+.demosButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 20px -5px black;
+    background-color: white;
+    color: #282d2c;
+    margin-right: 10px;
+}
+
+.demosButton p, .onSaleButton p {
+    color: #282d2c;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.onSaleButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 20px -5px black;
+    background-color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.onSaleButton .cash p{
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #287a00;
+}
+
+.onSaleButton .cash span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-85%,0);
+    color: #287a00;
+}
+
+.purpleOnWhite{
+    background-color: #5b2ca2; 
+    font-weight: 400;
+    color: white;
+    border-radius: 4px;
+    border:none;
+    padding: 10px 20px;
+}
+
+.purpleOnWhite:hover{
+    color: #5b2ca2; 
+    font-weight: 200;
+    background-color:rgba(189, 162, 243, 0.2);
+}
+
+#celebration .purpleOnWhite:hover{
+    color: #5b2ca2; 
+    font-weight: 200;
+    background-color:white;
+}
+
+#social .purpleOnWhite:hover{
+    color: #5b2ca2; 
+    font-weight: 200;
+    background-color:white;
+}
+
+.purpleOnWhite i {
+    margin-right: 10px;
+}
+
+.purpleOnWhite p {
+    font-size: 0.8rem;
+}
+
+.whiteOnPurple{
+    color: #5b2ca2; 
+    font-weight: 200;
+    background-color: white;
+    border-radius: 4px;
+    border:none;
+    padding: 10px 20px;
+}
+
+.whiteOnPurple p{
+    font-size: 0.8rem;
+}
+
+.whiteOnPurple:hover{
+    background-color: #5b2ca2; 
+    font-weight: 400;
     color: white;
 }
 /* project */
@@ -360,6 +466,7 @@ main {
     width: 1300px;
     height: 650px;
     margin: auto;
+    position: relative;
 }
 
 #celebration .corporate {
@@ -413,6 +520,31 @@ main {
 #celebration .wedding:hover .wedding-explore{
     opacity: 1;
 }
+
+#celebration .corporate .square-buttons {
+    position: absolute;
+    top: 20%;
+    right: -120%;
+    transform: translate(20%,-20%);
+    opacity:0;
+}
+
+#celebration .wedding .square-buttons {
+    position: absolute;
+    top: 20%;
+    right: -12%;
+    transform: translate(20%,-20%);
+    opacity:0;
+}
+
+#celebration .corporate:hover  .square-buttons{
+    opacity: 1;
+}
+
+#celebration .wedding:hover .square-buttons{
+    opacity:1;
+}
+
 
 #all-products {
     width: 1300px;
@@ -535,7 +667,7 @@ main {
     height: 580px;
     padding: 100px 50px;
     margin-left:20px ;
-    background-color: #e9dedc;
+    background-color:rgba(189, 162, 243, 0.2);
     
 }
 
@@ -624,7 +756,7 @@ main {
    width: calc(50% - 10px);
     height: 296px;
     margin: 0 6px;
-    background-color: #bda2f3;
+    background-color:rgba(189, 162, 243, 0.2);
 }
 
 #delivery {
@@ -711,3 +843,13 @@ footer .social-icons i {
     justify-content: flex-end;
 }
 
+footer .emailInput{
+    padding: 7px;
+    border: 1px solid rgba(146, 146, 149, 0.5);
+    border-radius: 4px;
+    width: 400px;
+}
+
+input::placeholder{
+    font-size: 0.2;
+}
